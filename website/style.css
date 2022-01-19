@@ -5,23 +5,24 @@ body{
 
 #app{
     display: grid;
-    grid-auto-rows: minmax(150px, auto);
+    grid-auto-rows: minmax(40px, auto);
     /* grid-template-columns:  */
-    height:100vh;
+    min-height: 100vh;
     background: #f23557;
     color: #f0d43a;
     justify-content: center;
-    grid-gap: 1em;
+    grid-gap: 0 1em;
     font-size: 20px;
     font-family: 'Oswald', sans-serif;
+    max-width: 100%;
+    padding: 1rem 0;
 }
 
-.holder{
-
-}
+.holder{padding: .3rem 1rem;}
 
 .entry{
     background: rgba(59, 74, 107, .4);
+    margin-top: .5rem;
 }
 
 #entryHolder{
@@ -40,9 +41,7 @@ body{
 
 }
 
-.headline {
-
-}
+.headline {}
 .title{
 
 }
@@ -73,6 +72,7 @@ button{
     font-family: 'Oswald', sans-serif;
     border: none;
     box-shadow: 2px 4px 5px #444;
+    cursor: pointer;
 }
 h1{
     font-size: 36px;
